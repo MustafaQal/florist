@@ -1,0 +1,38 @@
+:root {
+    --main_text_color: rgb(17, 17, 17);
+    --active_text_color: rgb(244, 93, 150);
+
+}
+
+/* ============== Navbar ============*/
+.main_txt_color {
+    color: var(--main_text_color);
+}
+.active_txt_color {
+    color: var(--active_text_color);
+}
+
+.navbar .nav-item .active {
+    color: var(--active_text_color);
+}
+.navbar .nav-item a{
+    transition: all .5s;
+}
+.navbar .nav-item a:hover {
+    color: var(--active_text_color);
+}
+
+.navbar_txt {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: var(--main_text_color);
+}
+
+.oswald_txt {
+    font-family: "Oswald", sans-serif;
+}
+
+.ls_2 {
+    letter-spacing: 2px;
+}
