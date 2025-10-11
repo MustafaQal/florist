@@ -1,13 +1,19 @@
 :root {
     --main_text_color: rgb(17, 17, 17);
     --active_text_color: rgb(244, 93, 150);
+    --main_text_font: "Libre Baskerville", serif;
+    --paragraph_text_font: "Quicksand", sans-serif;
+}
 
+body {
+    height: 5000px;
 }
 
 /* ============== Navbar ============*/
 .main_txt_color {
     color: var(--main_text_color);
 }
+
 .active_txt_color {
     color: var(--active_text_color);
 }
@@ -15,9 +21,11 @@
 .navbar .nav-item .active {
     color: var(--active_text_color);
 }
-.navbar .nav-item a{
+
+.navbar .nav-item a {
     transition: all .5s;
 }
+
 .navbar .nav-item a:hover {
     color: var(--active_text_color);
 }
@@ -29,10 +37,99 @@
     color: var(--main_text_color);
 }
 
+/* ============== Hero ============*/
+
+.hero .hero_2 {
+    background-image: url(./img/hero/hero_img1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero .hero_1 {
+    background-image: url(./img/hero/hero_img2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero .hero_1:hover {
+    cursor: pointer;
+}
+
+.hero .hero_2:hover {
+    cursor: pointer;
+}
+
+.hero .carousel-indicators {
+    left: -530px;
+    bottom: 170px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    border: 1px solid var(--active_text_color)
+}
+
+.main-btn {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #f45d96;
+    padding: 14px 30px 12px;
+    border-radius: 50px;
+     width: auto;
+     text-decoration: none;
+}
+
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 60px;
+    font-size: 43px;
+
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .oswald_txt {
     font-family: "Oswald", sans-serif;
+    font-family: l;
 }
+
+.quicksand_txt {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #111111;
+    font-weight: 700;
+}
+
 
 .ls_2 {
     letter-spacing: 2px;
+}
+
+.pt_70 {
+    padding-top: 70px;
 }
