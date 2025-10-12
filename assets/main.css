@@ -10,6 +10,7 @@ body {
 }
 
 /* ============== Navbar ============*/
+
 .main_txt_color {
     color: var(--main_text_color);
 }
@@ -86,10 +87,55 @@ body {
     background: #f45d96;
     padding: 14px 30px 12px;
     border-radius: 50px;
-     width: auto;
-     text-decoration: none;
+    width: auto;
+    text-decoration: none;
 }
 
+/* ============== marketing  ============*/
+.marketing .card_element {
+    gap: 35px;
+}
+
+.marketing h3 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: normal;
+    line-height: 28.8px;
+    font-size: 24px;
+}
+
+.marketing .card_element p {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    font-weight: normal;
+    line-height: 27px;
+}
+
+.marketing span {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+
+.marketing .card {
+    position: relative;
+    --bs-card-border-width: none;
+}
+
+.marketing .card .card_txt {
+    background: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    width: calc(100% - 60px);
+}
+
+/* ============== End ============*/
 
 .libre-baskerville-regular {
     font-family: "Libre Baskerville", serif;
@@ -97,8 +143,8 @@ body {
     font-style: normal;
     line-height: 60px;
     font-size: 43px;
-
 }
+
 
 .libre-baskerville-bold {
     font-family: "Libre Baskerville", serif;
@@ -114,7 +160,6 @@ body {
 
 .oswald_txt {
     font-family: "Oswald", sans-serif;
-    font-family: l;
 }
 
 .quicksand_txt {
