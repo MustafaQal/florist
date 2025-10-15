@@ -135,14 +135,47 @@ body {
     width: calc(100% - 60px);
 }
 
+/* ============== ABOUT  ============*/
+.about span{
+    color: var(--active_text_color);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.text_about h2 {
+    color: #111111;
+    font-size: 38px;
+    line-height: 1.4;
+    margin-bottom: 26px;
+}
+.about .bg-img{
+    background-image: url(../assets/img/about/about-video.webp);
+    background-repeat: no-repeat;
+    height: 535px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.text_about{
+    background: #ffffff;
+    box-shadow: 0px 10px 21px rgba(99, 134, 137, 0.16);
+    padding: 100px 90px 105px 70px;
+    margin-left: -95px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+}
 /* ============== End ============*/
 
 .libre-baskerville-regular {
     font-family: "Libre Baskerville", serif;
-    font-weight: 800;
     font-style: normal;
-    line-height: 60px;
-    font-size: 43px;
+    line-height: 58px;
+    font-size: 42px;
 }
 
 
@@ -166,8 +199,6 @@ body {
     font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-size: 16px;
-    color: #111111;
-    font-weight: 700;
 }
 
 
@@ -177,4 +208,27 @@ body {
 
 .pt_70 {
     padding-top: 70px;
+}
+
+.text_p_16 {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    font-weight: normal;
+    line-height: 27px;
+    text-align: justify;
+}
+.text_p_18 {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.text_justify {
+    text-align: justify;
 }
