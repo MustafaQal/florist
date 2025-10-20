@@ -1,0 +1,620 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --main_text_color: rgb(17, 17, 17);
+    --active_text_color: rgb(244, 93, 150);
+    --main_text_font: "Libre Baskerville", serif;
+    --paragraph_text_font: "Quicksand", sans-serif;
+}
+
+.mainbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 2px;
+
+}
+
+.btn-green {
+    background-color: var(--primary-color-g);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 2px;
+
+}
+
+.btn-pink {
+    background-color: var(--primary-color);
+}
+
+.btn-green {
+    background-color: var(--primary-color-g);
+}
+
+
+/* Flex*/
+.d-flex {
+    display: flex;
+}
+
+.d-flex-column {
+    flex-direction: column;
+}
+
+.d-flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+
+/* background-color */
+
+
+/* width */
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+/* padding */
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-25 {
+    padding: 25px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.p-top-5 {
+    padding-top: 5px;
+}
+
+.p-top-10 {
+    padding-top: 10px;
+}
+
+.p-top-15 {
+    padding-top: 15px;
+}
+
+.p-top-20 {
+    padding-top: 20px;
+}
+
+.p-top-25 {
+    padding-top: 25px;
+}
+
+.p-top-30 {
+    padding-top: 30px;
+}
+
+.p-top-bottom-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.p-top-bottom-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p-top-bottom-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.p-top-bottom-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-top-bottom-25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.p-top-bottom-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.p-top-bottom-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* margin */
+.margin-5 {
+    margin: 5px;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-15 {
+    margin: 15px;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.margin-25 {
+    margin: 25px;
+}
+
+.margin-30 {
+    margin: 30px;
+}
+
+.margin-l-5 {
+    margin-left: 5px;
+}
+
+.margin-l-10 {
+    margin-left: 10px;
+}
+
+.margin-l-15 {
+    margin-left: 15px;
+}
+
+.margin-l-20 {
+    margin-left: 20px;
+}
+
+.margin-l-25 {
+    margin-left: 25px;
+}
+
+.margin-l-30 {
+    margin-left: 30px;
+}
+
+.margin-r-5 {
+    margin-right: 5px;
+}
+
+.margin-r-10 {
+    margin-right: 10px;
+}
+
+.margin-r-15 {
+    margin-right: 15px;
+}
+
+.margin-r-20 {
+    margin-right: 20px;
+}
+
+.margin-r-25 {
+    margin-right: 25px;
+}
+
+.margin-r-30 {
+    margin-right: 30px;
+}
+
+.margin-t-5 {
+    margin-top: 5px;
+}
+
+.margin-t-10 {
+    margin-top: 10px;
+}
+
+.margin-t-15 {
+    margin-top: 15px;
+}
+
+.margin-t-20 {
+    margin-top: 20px;
+}
+
+.margin-t-25 {
+    margin-top: 25px;
+}
+
+.margin-t-30 {
+    margin-top: 30px;
+}
+
+.margin-b-5 {
+    margin-bottom: 5px;
+}
+
+.margin-b-10 {
+    margin-bottom: 10px;
+}
+
+.margin-b-15 {
+    margin-bottom: 15px;
+}
+
+.margin-b-20 {
+    margin-bottom: 20px;
+}
+
+.margin-b-25 {
+    margin-bottom: 25px;
+}
+
+.margin-b-30 {
+    margin-bottom: 30px;
+}
+
+/* text */
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.text-50 {
+    font-size: 50px;
+}
+
+.text-30 {
+    font-size: 30px;
+}
+
+.text-17 {
+    font-size: 17px;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+/* justify-content */
+.justify-center {
+    justify-content: center;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+
+/* card */
+
+/* gap */
+.gap-2 {
+    gap: 2px;
+}
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-35 {
+    gap: 35px;
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+/* @media screen */
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: calc(100% - 200px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: calc(100% - 100px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: calc(100% - 40px);
+    }
+}
+
+/* float */
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clrfix {
+    clear: both;
+}
+
+/* border */
+
+.border-solid {
+    border: solid;
+}
+
+.border-dotted {
+    border: dotted;
+}
+
+.border-dashed {
+    border: dashed;
+}
+
+.border-left-solid {
+    border-left-style: solid;
+}
+
+.border-right-solid {
+    border-right-style: solid;
+}
+
+.border-top-solid {
+    border-top-style: solid;
+}
+
+.border-bottom-solid {
+    border-bottom-style: solid;
+}
+
+.border-left-dotted {
+    border-left-style: dotted;
+}
+
+.border-right-dotted {
+    border-right-style: dotted;
+}
+
+.border-top-dotted {
+    border-top-style: dotted;
+}
+
+.border-bottom-dotted {
+    border-bottom-style: dotted;
+}
+
+.border-left-dashed {
+    border-left-style: dashed;
+}
+
+.border-right-dashed {
+    border-right-style: dashed;
+}
+
+.border-top-dashed {
+    border-top-style: dashed;
+}
+
+.border-bottom-dashed {
+    border-bottom-style: dashed;
+}
+
+.border-width-1 {
+    border-width: 1px;
+}
+
+.border-width-2 {
+    border-width: 2px;
+}
+
+.border-width-5 {
+    border-width: 5px;
+}
+
+.border-width-10 {
+    border-width: 10px;
+}
+
+/* border-radius */
+.border-radius-2 {
+    border-radius: 2px;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.border-radius-15 {
+    border-radius: 15px;
+}
+
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+.border-radius-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.border-radius-oval {
+    width: 400px;
+    height: 150px;
+    border-radius: 50%;
+    /* بيضاوي لأنه الارتفاع والعرض غير متساويين*/
+}
+
+/* filter */
+.filter-blur-0 {
+    filter: blur(0);
+}
+
+.filter-blur-25 {
+    filter: blur(25px);
+}
+
+.filter-blur-50 {
+    filter: blur(50px);
+}
+
+.filter-blur-75 {
+    filter: blur(75px);
+}
+
+.filter-blur-100 {
+    filter: blur(100px);
+}
+
+/* position */
+
+.position-fixed {
+    position: fixed;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+    /* لازم لازم مع sticky*/
+}
+
+.position-absolute {
+    position: absolute;
+    /*   غير موجود ب  البيرنت سيتحرك العنصر بالنسبة لل body  position: relative;  لو */
+}
+
+.position-relative {
+    position: relative;
+    /*لو 
+    /*top: 20px; تختلف عن التوب الي قبل, عنا تبعد عن العنصر الي فوقها وليس عن حبود الصفحة ككل */
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-5 {
+    z-index: 5;
+}
