@@ -186,8 +186,36 @@
 
 .flex_20 {
     display: flex;
-    flex: 0 0 18%;
+    flex: 0 0 20%;
 }
+
+@media screen and (max-width: 1400px) {
+.flex_20 {
+    flex: 0 0 25%;
+}
+}
+
+@media screen and (max-width: 1200px) {
+.flex_20 {
+    flex: 0 0 33%;
+     justify-content: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+.flex_20 {
+    flex: 0 0 50%;
+}
+}
+
+@media screen and (max-width: 576px) {
+.flex_20 {
+    flex: 0 0 100%;
+    justify-content: center;
+}
+
+}
+
 
 .arrivals .nav-tabs {
     --bs-nav-tabs-border-width: none;
@@ -217,7 +245,7 @@
 
 .arrivals .card .icons {
     position: absolute;
-    bottom: 30%;
+    bottom: 35%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
