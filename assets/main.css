@@ -443,7 +443,7 @@
     padding-bottom: 75px;
     padding-top: 100px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .testimonial:before {
@@ -453,6 +453,7 @@
     height: 842px;
     width: 802px;
     background-image: url(../assets/img/Testimonial/left-bg.webp);
+    content: "";
     z-index: -1;
 }
 
@@ -476,6 +477,12 @@
     width: 488px;
     background-image: url(../assets/img/Testimonial/right-bg.webp);
     z-index: -1;
+    content: ""; 
+/*Mustafa: 
+In CSS, pseudo-elements like ::before and ::after create a virtual element inside your HTML —
+but they don’t exist unless you explicitly give them some content.
+The content property tells the browser:
+“Hey, actually create this pseudo-element in the DOM so I can style it.”*/
 }
 
 @media screen and (max-width: 992px) {
