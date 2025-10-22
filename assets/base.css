@@ -618,3 +618,104 @@ ul {
 .z-index-5 {
     z-index: 5;
 }
+
+
+/* ============== Florist ============*/
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    line-height: 58px;
+    font-size: 42px;
+}
+
+.libre_text_18 {
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    line-height: 21.6px;
+    font-size: 18px;
+    color: var(--main_text_color);
+}
+
+.libre_text_16 {
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color: var(--main_text_color);
+}
+
+.libre_text_24 {
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    line-height: 32px;
+    font-size: 24px;
+    color: var(--main_text_color);
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.oswald_txt {
+    font-family: "Oswald", sans-serif;
+}
+
+.quicksand_txt {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+.ls_2 {
+    letter-spacing: 2px;
+}
+
+.ls_4 {
+    letter-spacing: 4px;
+}
+
+.g-30 {
+    gap: 30px;
+}
+
+.pt_70 {
+    padding-top: 70px;
+}
+
+.pb_30 {
+    padding-top: 30px;
+}
+
+.text_p_16 {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    font-weight: normal;
+    line-height: 27px;
+    text-align: justify;
+}
+
+.text_p_18 {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.text_justify {
+    text-align: justify;
+}

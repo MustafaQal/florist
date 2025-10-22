@@ -182,6 +182,13 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .about .section-title {
+        text-align: center;
+    }
+}
+
+
 /* ============== New Arrivals ============*/
 
 .flex_20 {
@@ -190,29 +197,29 @@
 }
 
 @media screen and (max-width: 1400px) {
-.flex_20 {
-    flex: 0 0 25%;
-}
+    .flex_20 {
+        flex: 0 0 25%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-.flex_20 {
-    flex: 0 0 33%;
-     justify-content: center;
-}
+    .flex_20 {
+        flex: 0 0 33%;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
-.flex_20 {
-    flex: 0 0 50%;
-}
+    .flex_20 {
+        flex: 0 0 50%;
+    }
 }
 
 @media screen and (max-width: 576px) {
-.flex_20 {
-    flex: 0 0 100%;
-    justify-content: center;
-}
+    .flex_20 {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
 
 }
 
@@ -336,6 +343,10 @@
         flex: 0 0 auto;
         width: 100%;
     }
+
+    .Custom_flower .Custom_text {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -347,6 +358,10 @@
         border-radius: 50px;
         width: auto;
         text-decoration: none;
+    }
+
+    .Custom_flower .Custom_text {
+        text-align: center;
     }
 }
 
@@ -410,6 +425,7 @@
     .tricks .d-flex {
         flex-direction: column;
         gap: 2px;
+        text-align: center;
     }
 
     .main-btn-white-border {
@@ -437,7 +453,6 @@
     height: 842px;
     width: 802px;
     background-image: url(../assets/img/Testimonial/left-bg.webp);
-    content: "";
     z-index: -1;
 }
 
@@ -460,123 +475,91 @@
     height: 688px;
     width: 488px;
     background-image: url(../assets/img/Testimonial/right-bg.webp);
-    content: "";
     z-index: -1;
 }
 
 @media screen and (max-width: 992px) {
-.testimonial:before {
-display: none;
-}
-.testimonial:after {
-display: none;
-}
-.col-8{
-    width: 100%;
-}
-.container{
-    width: 100%;
-    padding: 0;
-}
+    .testimonial:before {
+        display: none;
+    }
+
+    .testimonial:after {
+        display: none;
+    }
+
+    .col-8 {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
 }
 
+/* ================ Insta  Section ===================*/
+.insta .insta-card {
+    position: relative;
+    margin: 10px;
+    box-shadow: 10px 10px 21px rgba(99, 133, 136, 0.16);
 
-/* ============== End ============*/
-
-.libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-style: normal;
-    line-height: 58px;
-    font-size: 42px;
+}
+.insta-card img {
+  width: 100%;
 }
 
-.libre_text_18 {
-    font-family: "Libre Baskerville", serif;
-    font-style: normal;
-    line-height: 21.6px;
-    font-size: 18px;
-    color: var(--main_text_color);
+.insta .insta-text {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
 }
 
-.libre_text_16 {
-    font-family: "Libre Baskerville", serif;
-    font-style: normal;
-    line-height: 24px;
-    font-size: 14px;
-    color: var(--main_text_color);
+.insta-card:hover .insta-text {
+    visibility: visible;
 }
 
-.libre_text_24 {
-    font-family: "Libre Baskerville", serif;
-    font-style: normal;
-    line-height: 32px;
-    font-size: 24px;
-    color: var(--main_text_color);
+.insta .col-lg-2 {
+    width: calc(20% - 20px);
 }
 
-.libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
+.insta .flex_20 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
-.libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
+.insta .col-lg-2 {
+  width: calc(20% - 20px);
 }
 
-.oswald_txt {
-    font-family: "Oswald", sans-serif;
+@media screen and (max-width: 1200px) {
+  .insta .col-lg-2 {
+    width: calc(25% - 20px);
+  }
 }
 
-.quicksand_txt {
-    font-family: "Quicksand", sans-serif;
-    font-style: normal;
-    font-size: 16px;
+@media screen and (max-width: 992px) {
+  .insta .col-lg-2 {
+    width: calc(33.3% - 20px);
+  }
 }
 
-
-.ls_2 {
-    letter-spacing: 2px;
+@media screen and (max-width: 768px) {
+  .insta .col-lg-2 {
+    width: calc(50% - 20px);
+  }
 }
 
-.ls_4 {
-    letter-spacing: 4px;
+@media screen and (max-width: 576px) {
+  .insta .col-lg-2 {
+    width: calc(100% - 20px);
+  }
 }
 
-.g-30 {
-    gap: 30px;
-}
-
-.pt_70 {
-    padding-top: 70px;
-}
-
-.pb_30 {
-    padding-top: 30px;
-}
-
-.text_p_16 {
-    font-family: "Quicksand", sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    color: rgb(68, 68, 68);
-    font-weight: normal;
-    line-height: 27px;
-    text-align: justify;
-}
-
-.text_p_18 {
-    font-family: "Quicksand", sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(68, 68, 68);
-    font-weight: normal;
-    line-height: 30px;
-    text-align: justify;
-}
-
-.text_justify {
-    text-align: justify;
-}
+/* ================ End Insta  Section ===================*/
