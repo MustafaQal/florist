@@ -477,8 +477,8 @@
     width: 488px;
     background-image: url(../assets/img/Testimonial/right-bg.webp);
     z-index: -1;
-    content: ""; 
-/*Mustafa: 
+    content: "";
+    /*Mustafa: 
 In CSS, pseudo-elements like ::before and ::after create a virtual element inside your HTML —
 but they don’t exist unless you explicitly give them some content.
 The content property tells the browser:
@@ -511,8 +511,9 @@ The content property tells the browser:
     box-shadow: 10px 10px 21px rgba(99, 133, 136, 0.16);
 
 }
+
 .insta-card img {
-  width: 100%;
+    width: 100%;
 }
 
 .insta .insta-text {
@@ -536,37 +537,113 @@ The content property tells the browser:
 }
 
 .insta .flex_20 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 .insta .col-lg-2 {
-  width: calc(20% - 20px);
+    width: calc(20% - 20px);
 }
 
 @media screen and (max-width: 1200px) {
-  .insta .col-lg-2 {
-    width: calc(25% - 20px);
-  }
+    .insta .col-lg-2 {
+        width: calc(25% - 20px);
+    }
 }
 
 @media screen and (max-width: 992px) {
-  .insta .col-lg-2 {
-    width: calc(33.3% - 20px);
-  }
+    .insta .col-lg-2 {
+        width: calc(33.3% - 20px);
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .insta .col-lg-2 {
-    width: calc(50% - 20px);
-  }
+    .insta .col-lg-2 {
+        width: calc(50% - 20px);
+    }
 }
 
 @media screen and (max-width: 576px) {
-  .insta .col-lg-2 {
-    width: calc(100% - 20px);
-  }
+    .insta .col-lg-2 {
+        width: calc(100% - 20px);
+    }
 }
 
 /* ================ End Insta  Section ===================*/
+
+/*=================== Footer section =======================*/
+
+.address{
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+.address .company_text{
+    padding: 50px 0 45px;
+}
+
+.address .Newletter_text{
+    padding: 50px 65px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+
+}
+
+.address .address_text{
+    padding: 50px 0 45px 60px;
+}
+
+
+.address .company_text a{
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--main_text_color); 
+}
+.address .address_text li{
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--main_text_color); 
+}
+
+.Newletter_text form input {
+    border: none;
+    border-bottom: 2px solid #111111;
+    width: auto;
+}
+
+.Newletter_text form button {
+    border: none;
+    border-bottom: 2px solid #111111;
+    width: auto;
+    background-color: white;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+@media only screen and (max-width: 767px) {
+    .address .company_text, .address .Newletter_text, .address .address_text{
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+.footer .social {
+    text-align: center;
+    padding: 5px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.footer .copyright{
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+}
+}

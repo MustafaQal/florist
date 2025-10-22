@@ -675,6 +675,16 @@ ul {
     font-size: 16px;
 }
 
+.main_txt_color{
+    color: var(--main_text_color);
+}
+
+.line-height_36 {
+line-height: 36PX;
+}
+.text-align_start {
+    text-align: start;
+}
 
 .ls_2 {
     letter-spacing: 2px;
@@ -718,4 +728,8 @@ ul {
 
 .text_justify {
     text-align: justify;
+}
+
+.padding_l_60{
+    padding-left: 60px;
 }
