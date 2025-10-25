@@ -574,37 +574,39 @@ The content property tells the browser:
 
 /*=================== Footer section =======================*/
 
-.address{
+.address {
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
 }
-.address .company_text{
+
+.address .company_text {
     padding: 50px 0 45px;
 }
 
-.address .Newletter_text{
+.address .Newletter_text {
     padding: 50px 65px;
     border-left: 1px solid #eaeaea;
     border-right: 1px solid #eaeaea;
 
 }
 
-.address .address_text{
+.address .address_text {
     padding: 50px 0 45px 60px;
 }
 
 
-.address .company_text a{
+.address .company_text a {
     font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-size: 16px;
-    color: var(--main_text_color); 
+    color: var(--main_text_color);
 }
-.address .address_text li{
+
+.address .address_text li {
     font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-size: 16px;
-    color: var(--main_text_color); 
+    color: var(--main_text_color);
 }
 
 .Newletter_text form input {
@@ -620,13 +622,17 @@ The content property tells the browser:
     background-color: white;
 }
 
-.copyright{
+.copyright {
     display: flex;
     justify-content: center;
     gap: 1px;
 }
+
 @media only screen and (max-width: 767px) {
-    .address .company_text, .address .Newletter_text, .address .address_text{
+
+    .address .company_text,
+    .address .Newletter_text,
+    .address .address_text {
         text-align: center;
         margin-bottom: 20px;
         padding: 5px;
@@ -634,16 +640,18 @@ The content property tells the browser:
 }
 
 @media screen and (max-width: 992px) {
-.footer .social {
-    text-align: center;
-    padding: 5px;
-}
+    .footer .social {
+        text-align: center;
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-.footer .copyright{
-    flex-direction: column;
-    text-align: center;
-    gap: 0;
+    .footer .copyright {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
 }
-}
+
+/*================ End Footer ==================*/
