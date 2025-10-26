@@ -1,0 +1,296 @@
+@media screen and (max-width: 576px) {
+    .container {
+        padding-left: 35px;
+        padding-right: 25px;
+    }
+}
+
+/*================ Blog hero ==================*/
+.Shop_hero {
+    padding: 20px 0 60px;
+}
+
+.Shop_hero .Shop_img {
+    background-image: url(../assets/img/about/about_hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    position: relative;
+}
+
+.Shop_hero .Shop_text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding: 52px 0 60px;
+    transform: translate(-50%, -50%);
+}
+
+.Shop_text .home_Shop a::after {
+    content: "|";
+    color: #aeaeae;
+}
+
+/* ============== New Arrivals ============*/
+
+.flex_20 {
+    display: flex;
+    flex: 0 0 20%;
+}
+
+@media screen and (max-width: 1400px) {
+    .flex_20 {
+        flex: 0 0 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .flex_20 {
+        flex: 0 0 33%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex_20 {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .flex_20 {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+}
+
+
+.arrivals .nav-tabs {
+    --bs-nav-tabs-border-width: none;
+}
+
+.arrivals .nav {
+    --bs-nav-link-color: var(--main_text_color);
+}
+
+.arrivals .card {
+    border: none;
+    position: relative;
+}
+
+.arrivals .nav .active {
+    border: 2px solid var(--active_text_color);
+}
+
+.arrivals .card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 0;
+}
+
+.arrivals .card .icons {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    visibility: hidden;
+}
+
+.card:hover .icons {
+    visibility: visible;
+}
+
+.arrivals .card .icons svg {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.arrivals .card .icons svg:hover {
+    transform: scale(1.3);
+    background-color: var(--active_text_color);
+}
+
+.card_text .price {
+    visibility: visible;
+}
+
+.card_text .price {
+    visibility: visible;
+}
+
+.card:hover .card_text .price {
+    visibility: hidden;
+}
+
+.card_text .add_cart {
+    visibility: hidden;
+    padding-top: 30px;
+}
+
+.card:hover .card_text .add_cart {
+    visibility: visible;
+    position: absolute;
+    color: var(--active_text_color);
+}
+
+/* ========== End arrivals section ===== */
+
+/* ================Start Insta  Section ===================*/
+.insta .insta-card {
+    position: relative;
+    margin: 10px;
+    box-shadow: 10px 10px 21px rgba(99, 133, 136, 0.16);
+
+}
+
+.insta-card img {
+    width: 100%;
+}
+
+.insta .insta-text {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.insta-card:hover .insta-text {
+    visibility: visible;
+}
+
+.insta .col-lg-2 {
+    width: calc(20% - 20px);
+}
+
+.insta .flex_20 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.insta .col-lg-2 {
+    width: calc(20% - 20px);
+}
+
+@media screen and (max-width: 1200px) {
+    .insta .col-lg-2 {
+        width: calc(25% - 20px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .insta .col-lg-2 {
+        width: calc(33.3% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .insta .col-lg-2 {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .insta .col-lg-2 {
+        width: calc(100% - 20px);
+    }
+}
+
+/* ================ End Insta  Section ===================*/
+
+/*=================== Footer section =======================*/
+
+.address {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.address .company_text {
+    padding: 50px 0 45px;
+}
+
+.address .Newletter_text {
+    padding: 50px 65px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+
+}
+
+.address .address_text {
+    padding: 50px 0 45px 60px;
+}
+
+
+.address .company_text a {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--main_text_color);
+}
+
+.address .address_text li {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--main_text_color);
+}
+
+.Newletter_text form input {
+    border: none;
+    border-bottom: 2px solid #111111;
+    width: auto;
+}
+
+.Newletter_text form button {
+    border: none;
+    border-bottom: 2px solid #111111;
+    width: auto;
+    background-color: white;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .address .company_text,
+    .address .Newletter_text,
+    .address .address_text {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer .social {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer .copyright {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+}
