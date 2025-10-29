@@ -1,0 +1,370 @@
+@media screen and (max-width: 576px) {
+    .container {
+        padding-left: 35px;
+        padding-right: 25px;
+    }
+}
+
+/*================ Pages hero ==================*/
+.pages_hero {
+    padding: 20px 0 60px;
+}
+
+.pages_hero .pages_img {
+    background-image: url(../assets/img/about/about_hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    position: relative;
+}
+
+.pages_hero .pages_text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding: 52px 0 60px;
+    transform: translate(-50%, -50%);
+}
+
+.pages_text .home_pages a::after {
+    content: "|";
+    color: #aeaeae;
+}
+
+/* ============== Internal Navbar ============*/
+/* ============== Internal Navbar ============*/
+.pages_list{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content: center;
+}
+
+.pages_list a{
+  display:inline-block;
+  padding:8px 12px;
+  color:var(--main_text_color);
+  text-decoration:none;
+  font-weight:600;
+  border-radius:8px;
+  transition: all .15s ease;
+  font-size:0.95rem;
+}
+
+.pages_list a:hover{
+  color:var(--active_text_color);
+  background: rgb(194, 221, 207);
+}
+
+@media (max-width:720px){
+  .pages_list{
+    flex-direction:column;
+    gap:8px;
+    width:100%;
+  }
+  .pages_list a{
+    width:100%;
+    text-align:center;
+    padding:10px;
+  }
+}
+
+
+/* ========== End Internal Navbar  section ===== */
+.Shopping_table table {
+    width: 100%;
+}
+
+.Shopping_table thead,
+tbody tr {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.Shopping_table tbody tr td {
+    width: 480px;
+}
+
+.Shopping_table .quantity_col {
+    width: 150px;
+}
+
+.Shopping_table .quantity_col span {
+    font-size: 16px;
+    color: #888888;
+    float: left;
+    height: 100%;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+.Shopping_table .quantity_col input {
+    font-size: 20px;
+    color: #111111;
+    font-weight: 700;
+    float: left;
+    text-align: center;
+    border: none;
+    background: transparent;
+    width: 80px;
+    height: 48px;
+}
+
+.Shopping_table .total_col span {
+    font-size: 20px;
+    color: #111111;
+    font-weight: 700;
+    width: 200px;
+}
+
+.coupon_code {
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.coupon_code form {
+    position: relative;
+}
+
+.coupon_code form input {
+    height: 46px;
+    width: 70%;
+    color: rgb(136, 136, 136);
+    padding-left: 20px;
+
+}
+
+.coupon_code form button {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 46px;
+    width: 30%;
+    background: rgb(17, 17, 17);
+}
+
+.cart_total {
+    padding: 30px;
+
+}
+
+.cart_total span {
+    font-size: 16px;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+.checkout_btn{
+    color: #111111;
+    display: block;
+    color: white;
+    background: #111111;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 14px 20px 12px;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .Shopping_table {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .Shopping_table thead th{
+        font-size: 18px;
+    }
+
+    .Shopping_table tbody tr td {
+        width: 120px;
+    }
+
+    .Shopping_table .quantity_col {
+        width: 80px;
+    }
+
+    .Shopping_table .quantity_col input {
+        width: 40px;
+    }
+
+    .Shopping_table tbody tr .table_img .d-flex {
+        flex-direction: column;
+    }
+
+    .Shopping_table tbody tr .table_img .table_text {
+        font-size: 12px;
+    }
+
+    .Shopping_table .close_svg{
+        padding-left: 10px;
+    }
+    .Shopping_table .total_col span {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+}
+}
+
+
+/* ======= Shopping cart ======= -->
+<!-- Mustafa:Check HTML>>Session_4>>Part_1 https://drive.google.com/file/d/1ezpHXOPgo6dosZfkri2XFWFd4hIxM6tu/view 
+*/
+
+
+
+
+
+/* ================Start Insta  Section ===================*/
+.insta .insta-card {
+    position: relative;
+    margin: 10px;
+    box-shadow: 10px 10px 21px rgba(99, 133, 136, 0.16);
+
+}
+
+.insta-card img {
+    width: 100%;
+}
+
+.insta .insta-text {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.insta-card:hover .insta-text {
+    visibility: visible;
+}
+
+.insta .col-lg-2 {
+    width: calc(20% - 20px);
+}
+
+.insta .flex_20 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.insta .col-lg-2 {
+    width: calc(20% - 20px);
+}
+
+@media screen and (max-width: 1200px) {
+    .insta .col-lg-2 {
+        width: calc(25% - 20px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .insta .col-lg-2 {
+        width: calc(33.3% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .insta .col-lg-2 {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .insta .col-lg-2 {
+        width: calc(100% - 20px);
+    }
+}
+
+/* ================ End Insta  Section ===================*/
+
+/*=================== Footer section =======================*/
+
+.address {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.address .company_text {
+    padding: 50px 0 45px;
+}
+
+.address .Newletter_text {
+    padding: 50px 65px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+
+}
+
+.address .address_text {
+    padding: 50px 0 45px 60px;
+}
+
+
+.address .company_text a {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--main_text_color);
+}
+
+.address .address_text li {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--main_text_color);
+}
+
+.Newletter_text form input {
+    border: none;
+    border-bottom: 2px solid #111111;
+    width: auto;
+}
+
+.Newletter_text form button {
+    border: none;
+    border-bottom: 2px solid #111111;
+    width: auto;
+    background-color: white;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .address .company_text,
+    .address .Newletter_text,
+    .address .address_text {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer .social {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer .copyright {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+}

@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./assets/base.css" />
     <!-- main css-->
     <link rel="stylesheet" href="./assets/main.css" />
-    <link rel="stylesheet" href="./assets/blog.css" />
+    <link rel="stylesheet" href="./assets/shopping-cart.css" />
 
 
 </head>
@@ -57,10 +57,10 @@
                         <a class="nav-link" href="./shop.html">shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages.html">pages</a>
+                        <a class="nav-link active" aria-current="page" href="./pages.html">pages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./blog.html">blog</a>
+                        <a class="nav-link" href="./blog.html">blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">contact</a>
@@ -99,194 +99,273 @@
     <!--===================== MAIN =========================-->
 
     <main>
-        <!--===================== services Hero ======================-->
-        <section class="blog_hero">
-            <div class="blog_img">
-                <div class="blog_text">
-                    <h2 class="libre_text_50"> Our blog</h2>
-                    <div class="home_blog text-uppercase">
-                        <a class="active_txt_color" href="./index.html"> home </a>
-                        <span class="text_p_16 main_txt_color text-capitalize"> blog</span>
+        <!--===================== Pages Hero ======================-->
+        <section class="pages_hero">
+            <div class="pages_img">
+                <div class="pages_text">
+                    <h2 class="libre_text_50"> Shopping Cart </h2>
+                    <div class="home_pages text-uppercase">
+                        <a class="active_txt_color" href="./index.html"> pages </a>
+                        <span class="text_p_16 main_txt_color text-capitalize"> Shopping Cart</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--=================== Florist tricks section =======================-->
-        <section class="tricks">
+        <!-- Pages Navbar: temp navbar till we learn JS-->
+
+        <section class="pages_nav">
+            <div class="container">
+                <ul class="pages_list navbar_txt fw-bold">
+                    <li> <a href="./pages.html">Pages</a> </li>
+                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                    <li><a href="./checkout.html">Checkout</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./product-detail.html">Product Detail</a></li>
+                    <li><a href="./blog-details.html">Blog Details</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Shopping cart -->
+        <!-- Mustafa:Check HTML>>Session_4>>Part_1 https://drive.google.com/file/d/1ezpHXOPgo6dosZfkri2XFWFd4hIxM6tu/view -->
+        <section class="Shopping_cart pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-1.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-8">
+                        <div class="Shopping_table pe-5">
+                            <table>
+                                <thead>
+                                    <tr class="libre_text_24">
+                                        <th class="pb-5">Product</th>
+                                        <th class="pb-5">Quantity</th>
+                                        <th class="pb-5">Total</th>
+                                    </tr>
+                                </thead>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-2.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                <tbody>
+                                    <tr class="row_1">
+                                        <td class="pt-5 pb-5">
+                                            <div class="table_img">
+                                                <div class="d-flex gap-4">
+                                                    <div>
+                                                        <img src="./assets/img/pages/shopping_cart/cat-1.webp" />
+                                                    </div>
+                                                    <div class="table_text libre_text_24">
+                                                        <h4>Cactus Gym</h4>
+                                                        <span class="libre_text_16 fw-bold">$21.00</span>
+                                                    </div>
+                                                </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-3.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                            </div>
+                                        </td>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-4.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                        <td class="pt-5 pb-5">
+                                            <div class="quantity_col">
+                                                <div class=" d-flex">
+                                                    <span>-</span>
+                                                    <input type="text" value="1" />
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </td>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-5.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                        <td class="pt-5 pb-5">
+                                            <div class="total_col">
+                                                <span> $21.00 </span>
+                                            </div>
+                                        </td>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-6.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                        <td class="pt-5 pb-5">
+                                            <div class="close_svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                    <path fill="#c03939"
+                                                        d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C240.4 221.6 255.6 221.6 264.9 231L319.9 286L374.9 231C384.3 221.6 399.5 221.6 408.8 231C418.1 240.4 418.2 255.6 408.8 264.9L353.8 319.9L408.8 374.9C418.2 384.3 418.2 399.5 408.8 408.8C399.4 418.1 384.2 418.2 374.9 408.8L319.9 353.8L264.9 408.8C255.5 418.2 240.3 418.2 231 408.8C221.7 399.4 221.6 384.2 231 374.9L286 319.9L231 264.9C221.6 255.5 221.6 240.3 231 231z" />
+                                                </svg>
+                                            </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-7.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                        </td>
+                                    </tr>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-8.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                    <tr class="row_1">
+                                        <td class="pt-5 pb-5">
+                                            <div class="table_img">
+                                                <div class="d-flex gap-4">
+                                                    <div>
+                                                        <img src="./assets/img/pages/shopping_cart/cat-2.webp" />
+                                                    </div>
+                                                    <div class="table_text libre_text_24">
+                                                        <h4>Cactus Gym</h4>
+                                                        <span class="libre_text_16 fw-bold">$21.00</span>
+                                                    </div>
+                                                </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tricks_item">
-                            <div class="tricks_img">
-                                <img src="./assets/img/blog_page/blog-9.webp" />
-                            </div>
-                            <div class="tricks_txt d-flex flex-column gap-2">
-                                <div class="Trend">
-                                    <span>Trend news</span>
-                                </div>
-                                <a class="libre_text_24" href="#">8 Romantic Gifts to Celebrate Your Wedding
-                                    Anniversary</a>
-                                <p class="quicksand_txt">Flowers have a language all their own. In Victorian times,
-                                    receiving a…</p>
-                                <span>MAY 22, 2020</span>
-                            </div>
-                        </div>
-                    </div>
+                                            </div>
+                                        </td>
 
-                </div>
-                <!-- main-btn -->
-                <div class="text_align_center pt-md-3">
-                    <div>
-                        <a href="#" class="main-btn main-btn-white-border">View all posts</a>
+                                        <td class="pt-5 pb-5">
+                                            <div class="quantity_col">
+                                                <div class=" d-flex">
+                                                    <span>-</span>
+                                                    <input type="text" value="1" />
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="total_col">
+                                                <span> $21.00 </span>
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="close_svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                    <path fill="#c03939"
+                                                        d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C240.4 221.6 255.6 221.6 264.9 231L319.9 286L374.9 231C384.3 221.6 399.5 221.6 408.8 231C418.1 240.4 418.2 255.6 408.8 264.9L353.8 319.9L408.8 374.9C418.2 384.3 418.2 399.5 408.8 408.8C399.4 418.1 384.2 418.2 374.9 408.8L319.9 353.8L264.9 408.8C255.5 418.2 240.3 418.2 231 408.8C221.7 399.4 221.6 384.2 231 374.9L286 319.9L231 264.9C221.6 255.5 221.6 240.3 231 231z" />
+                                                </svg>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr class="row_1">
+                                        <td class="pt-5 pb-5">
+                                            <div class="table_img">
+                                                <div class="d-flex gap-4">
+                                                    <div>
+                                                        <img src="./assets/img/pages/shopping_cart/cat-3.webp" />
+                                                    </div>
+                                                    <div class="table_text libre_text_24">
+                                                        <h4>Cactus Gym</h4>
+                                                        <span class="libre_text_16 fw-bold">$21.00</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="quantity_col">
+                                                <div class=" d-flex">
+                                                    <span>-</span>
+                                                    <input type="text" value="1" />
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="total_col">
+                                                <span> $21.00 </span>
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="close_svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                    <path fill="#c03939"
+                                                        d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C240.4 221.6 255.6 221.6 264.9 231L319.9 286L374.9 231C384.3 221.6 399.5 221.6 408.8 231C418.1 240.4 418.2 255.6 408.8 264.9L353.8 319.9L408.8 374.9C418.2 384.3 418.2 399.5 408.8 408.8C399.4 418.1 384.2 418.2 374.9 408.8L319.9 353.8L264.9 408.8C255.5 418.2 240.3 418.2 231 408.8C221.7 399.4 221.6 384.2 231 374.9L286 319.9L231 264.9C221.6 255.5 221.6 240.3 231 231z" />
+                                                </svg>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="row_1">
+                                        <td class="pt-5 pb-5">
+                                            <div class="table_img">
+                                                <div class="d-flex gap-4">
+                                                    <div>
+                                                        <img src="./assets/img/pages/shopping_cart/cat-4.webp" />
+                                                    </div>
+                                                    <div class="table_text libre_text_24">
+                                                        <h4>Cactus Gym</h4>
+                                                        <span class="libre_text_16 fw-bold">$21.00</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="quantity_col">
+                                                <div class=" d-flex">
+                                                    <span>-</span>
+                                                    <input type="text" value="1" />
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="total_col">
+                                                <span> $21.00 </span>
+                                            </div>
+                                        </td>
+
+                                        <td class="pt-5 pb-5">
+                                            <div class="close_svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                    <path fill="#c03939"
+                                                        d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C240.4 221.6 255.6 221.6 264.9 231L319.9 286L374.9 231C384.3 221.6 399.5 221.6 408.8 231C418.1 240.4 418.2 255.6 408.8 264.9L353.8 319.9L408.8 374.9C418.2 384.3 418.2 399.5 408.8 408.8C399.4 418.1 384.2 418.2 374.9 408.8L319.9 353.8L264.9 408.8C255.5 418.2 240.3 418.2 231 408.8C221.7 399.4 221.6 384.2 231 374.9L286 319.9L231 264.9C221.6 255.5 221.6 240.3 231 231z" />
+                                                </svg>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tfoot class="quicksand_txt fw-bold">
+                                    <tr>
+                                        <th class="pt-5 pb-5">Continute shopping</th>
+                                        <th class="pt-5 pb-5">Clear shopping cart</th>
+                                        <th class="pt-5 pb-5">Update cart</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="coupon_code bg-light">
+                            <p>Enter coupon code. It will be applied at checkout.</p>
+                            <form class="d-flex">
+                                <input type="text" placeholder="Your code here">
+                                <button type="submit">APPLY</button>
+                            </form>
+
+                        </div>
+
+                        <div class="cart_total bg-light">
+                            <h4 class="libre_text_24 mb-4">Cart Total</h4>
+                            <div class="checkout_total">
+                                <div class="checkout_total">
+                                    <span class="main_txt_color"> Subtotal</span>
+                                    <span class="float-end fw-bold">$217.00</span>
+                                </div>
+                                <div>
+                                    <span class="main_txt_color"> Total </span>
+                                    <span class="float-end fw-bold active_txt_color">$217.00</span>
+                                </div>
+
+                            </div>
+                            <div class="pt-3">
+                                <a class="checkout_btn" href="#">PROCEED TO CHECKOUT</a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
         <!--=================== Insta  Section =======================-->
         <section class="insta p-3">
