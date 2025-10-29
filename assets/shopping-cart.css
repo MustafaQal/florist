@@ -69,6 +69,10 @@
     padding:10px;
   }
 }
+.pages_list a.active{
+  color:var(--active_text_color);
+  background: rgb(194, 221, 207);
+}
 
 
 /* ========== End Internal Navbar  section ===== */
