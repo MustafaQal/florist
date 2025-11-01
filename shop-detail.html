@@ -129,10 +129,12 @@
             </div>
         </section>
 
+                <!-- =============shop-detail ============-->
+
         <section class="shop-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="shop-img d-flex ">
                             <div>
                                 <img src="./assets/img/pages/shop-detail/product-details-1.webp" />
@@ -149,13 +151,13 @@
 
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="succulent">
                             <div>
-                                <span class="active_txt_color"> Succulent </span>
-                                <h2> Fly Me To The Moon</h2>
+                                <span class="active_txt_color quicksand_txt text-uppercase fw-bold"> Succulent </span>
+                                <h2 class="libre_text_30"> Fly Me To The Moon</h2>
                             </div>
-                            <div class="d-flex gap-3">
+                            <div class="d-flex gap-3 pt-md-3 text_p_16 flex-wrap">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
                                         viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -188,8 +190,8 @@
                                 <span> | </span>
                                 <span> Write a review </span>
                             </div>
-                            <div>
-                                <ul class="shop_details">
+                            <div class="pt-md-5">
+                                <ul class="shop_details text_p_16">
                                     <li>Categories: <span>Succulent</span></li>
                                     <li>Product code: <span>PM 101</span></li>
                                     <li>Reward points: <span>30</span></li>
@@ -197,7 +199,7 @@
                                 </ul>
                             </div>
 
-                            <div class="add_to_cart d-flex gap-3">
+                            <div class="add_to_cart d-flex gap-3 flex-wrap">
                                 <div class="shop_count">
                                     <div class="d-flex">
                                         <span>-</span>
@@ -217,9 +219,51 @@
                                     </svg>
                                 </div>
                             </div>
+
+                            <div class="shop_detail_nav_tab"> <!--Mustafa: https://getbootstrap.com/docs/5.3/components/navs-tabs/ -->
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">Description</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">Shipping &
+                                            Returns</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Reviews ( 03 )</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab" tabindex="0">
+                                        <p class="text_p_16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                            facilisis.</p>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <p class="text_p_16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab" tabindex="0">
+                                        <p class="text_p_16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore
+                                            et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                                            commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
